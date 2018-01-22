@@ -1,0 +1,285 @@
+﻿body {
+}
+
+#cool:hover {
+    color: purple;
+}
+
+#DivID {
+    margin-top: 50px;
+    margin-left: 600px;
+}
+
+#AgeID {
+    margin-left: 53px;
+}
+
+#o {
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+#o {
+    background: #b7f2f4;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#b7f2f4), to(#81e8eb));
+    background: -moz-linear-gradient(#b7f2f4, #81e8eb);
+    background: linear-gradient(#b7f2f4, #81e8eb);
+    border: solid 1px #87d3d5;
+    border-bottom: solid 3px #4fa7aa;
+    box-shadow: inset 0 0 0 1px #d4f8f8;
+    color: #437b7d;
+    text-shadow: 0 1px 0 #bef3f5;
+}
+
+
+    #o:hover {
+        background: #8deaed;
+        background: -webkit-gradient(linear, 0 0, 0 bottom, from(#8deaed), to(#9fedf0));
+        background: -moz-linear-gradient(#8deaed, #9fedf0);
+        background: linear-gradient(#8deaed, #9fedf0);
+        border: solid 1px #79c5c7;
+        border-bottom: solid 3px #4fa7aa;
+        box-shadow: inset 0 0 0 1px #b9f2f5;
+    }
+
+    #o:active {
+        background: #84e4e7;
+        background: -webkit-gradient(linear, 0 0, 0 bottom, from(#84e4e7), to(#80dcdf));
+        background: -moz-linear-gradient(#84e4e7, #80dcdf);
+        background: linear-gradient(#84e4e7, #80dcdf);
+        border: solid 1px #58999b;
+        box-shadow: inset 0 10px 15px 0 #75c9cc;
+    }
+
+#ExpID {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#AgeID {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.b {
+    margin-left: 250px;
+    background: #f5ffff;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+    .b th {
+        border-top: 1px solid #777777;
+        border-bottom: 1px solid #777777;
+        /*box-shadow: inset 0 1px 0 #999999, inset 0 -1px 0 #999999;*/
+        background: linear-gradient(#9595b6, #5a567f);
+        color: white;
+        padding: 10px 15px;
+        position: relative;
+    }
+
+        .b th:after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 25%;
+            height: 25%;
+            width: 100%;
+            background: linear-gradient(rgba(255, 255, 255, 0), rgba(255,255,255,.08));
+        }
+
+    .b tr:nth-child(odd) {
+
+    }
+
+    .b th:first-child {
+        border-left: 1px solid #777777;
+        border-bottom: 1px solid #777777;
+        /*box-shadow: inset 1px 1px 0 #999999, inset 0 -1px 0 #999999;*/
+    }
+
+    .b th:last-child {
+        border-right: 1px solid #777777;
+        border-bottom: 1px solid #777777;
+        /*box-shadow: inset -1px 1px 0 #999999, inset 0 -1px 0 #999999;*/
+    }
+
+    .b td {
+        border: 1px solid #e3eef7;
+        padding: 10px 15px;
+        position: relative;
+        transition: all 0.5s ease;
+    }
+
+    .b tbody:hover td {
+        /*color: transparent;*/
+        /*text-shadow: 0 0 3px #a09f9d;*/
+    }
+
+    .b tbody:hover tr:hover td {
+        /*color: #444444;
+        text-shadow: none;*/
+    }
+
+.back {
+    width: 7%;
+    height: 3%;
+    margin-left: 270px;
+    position: fixed;
+}
+
+.register {
+    width: 8%;
+    height: 3%;
+    position: fixed;
+}
+
+.modalW {
+    display: none;
+    position: fixed;
+    width: 100%;
+    overflow: auto;
+    margin-left: 300px;
+}
+
+.modal-content {
+    margin-left: 400px;
+    padding: 20px;
+    width: 30%;
+    background-color: gray;
+}
+
+.close {
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.register {
+    background: #b7f2f4;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#b7f2f4), to(#81e8eb));
+    background: -moz-linear-gradient(#b7f2f4, #81e8eb);
+    background: linear-gradient(#b7f2f4, #81e8eb);
+    border: solid 1px #87d3d5;
+    border-bottom: solid 3px #4fa7aa;
+    box-shadow: inset 0 0 0 1px #d4f8f8;
+    color: #437b7d;
+    text-shadow: 0 1px 0 #bef3f5;
+}
+
+    .register:hover {
+        background: #8deaed;
+        background: -webkit-gradient(linear, 0 0, 0 bottom, from(#8deaed), to(#9fedf0));
+        background: -moz-linear-gradient(#8deaed, #9fedf0);
+        background: linear-gradient(#8deaed, #9fedf0);
+        border: solid 1px #79c5c7;
+        border-bottom: solid 3px #4fa7aa;
+        box-shadow: inset 0 0 0 1px #b9f2f5;
+    }
+
+    .register:active {
+        background: #84e4e7;
+        background: -webkit-gradient(linear, 0 0, 0 bottom, from(#84e4e7), to(#80dcdf));
+        background: -moz-linear-gradient(#84e4e7, #80dcdf);
+        background: linear-gradient(#84e4e7, #80dcdf);
+        border: solid 1px #58999b;
+        box-shadow: inset 0 10px 15px 0 #75c9cc;
+    }
+#tableBody:hover {
+    cursor: pointer;
+}
+#tableBody tr:hover {
+    background-color: red;
+}
+
+#TableDoctors:hover
+{
+    
+    color:red;
+}
+    
+.back {
+    background: #b7f2f4;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#b7f2f4), to(#81e8eb));
+    background: -moz-linear-gradient(#b7f2f4, #81e8eb);
+    background: linear-gradient(#b7f2f4, #81e8eb);
+    border: solid 1px #87d3d5;
+    border-bottom: solid 3px #4fa7aa;
+    box-shadow: inset 0 0 0 1px #d4f8f8;
+    color: #437b7d;
+    text-shadow: 0 1px 0 #bef3f5;
+}
+
+    .back:hover {
+        background: #8deaed;
+        background: -webkit-gradient(linear, 0 0, 0 bottom, from(#8deaed), to(#9fedf0));
+        background: -moz-linear-gradient(#8deaed, #9fedf0);
+        background: linear-gradient(#8deaed, #9fedf0);
+        border: solid 1px #79c5c7;
+        border-bottom: solid 3px #4fa7aa;
+        box-shadow: inset 0 0 0 1px #b9f2f5;
+    }
+
+    .back:active {
+        background: #84e4e7;
+        background: -webkit-gradient(linear, 0 0, 0 bottom, from(#84e4e7), to(#80dcdf));
+        background: -moz-linear-gradient(#84e4e7, #80dcdf);
+        background: linear-gradient(#84e4e7, #80dcdf);
+        border: solid 1px #58999b;
+        box-shadow: inset 0 10px 15px 0 #75c9cc;
+    }
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+/* отображаем выпадающий список при наведении */
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+/* первый уровень выпадающего списка */
+nav ul ul li {
+    min-width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+nav {
+    margin: 100px 0;
+}
+
+    /* убираем отступы и поля, а также list-style для "ul", 
+			 * и добавляем "position:relative" */
+    nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
+    }
+
+        /* применяем inline-block позиционирование к элементам навигации */
+        nav ul li {
+            margin: 0px -7px 0 0;
+            display: inline-block;
+            background-color: midnightblue;
+        }
+
+    /* стилизуем ссылки */
+    nav a {
+        display: block;
+        padding: 0 10px;
+        color: #FFF;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+    }
+
+/* изменяем цвет фона при наведении курсора */
+.panel {
+    margin-left: 800px;
+}

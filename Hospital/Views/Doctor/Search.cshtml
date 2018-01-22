@@ -1,0 +1,80 @@
+﻿@{
+    ViewBag.Title = "Search";
+}
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Документ без названия</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="~/Scripts/Search.js" type="text/javascript"></script>
+    <link href="@Url.Content("~/Content/Search.css")" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="row">
+        <div class="col-lg-4" style="margin-top:50px;">
+            <div class="row">
+                <div class="col-lg-6">
+                    <label>Имя</label>
+                </div>
+                <div class="col-lg-6">
+                    <input id="name" style="background-color:#cc0000; color:#ffffff" value="" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <label>Фамилия</label>
+                </div>
+                <div class="col-lg-6">
+                    <input id="surname" style="background-color:#cc0000; color:#ffffff" value="" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <label>Возраст</label>
+                </div>
+                <div class="col-lg-6">
+                    <input id="age" style="background-color:#cc0000; color:#ffffff" value="" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <label>Опыт</label>
+                </div>
+                <div class="col-lg-6">
+                    <input id="experience" style="background-color:#cc0000; color:#ffffff" value="" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <label>Специализация</label>
+                </div>
+                <div class="col-lg-6">
+                    <input id="category" style="background-color:#cc0000; color:#ffffff" value="" />
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-6">
+            <table style="border: 1px solid;">
+                <caption style="color:cornflowerblue">Расписание доктора</caption>
+                <thead>
+                    <tr style="color:purple">
+                        <td>Дата</td>
+                        <td>Время</td>
+                        <td>Пациент</td>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div hidden>
+        <div id="doctorId">@ViewBag.DoctorId</div>
+    </div>
+</body>
+</html>

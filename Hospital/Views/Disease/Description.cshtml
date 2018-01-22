@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Search";
+}
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Документ без названия</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="~/Scripts/Description.js" type="text/javascript"></script>
+    <link href="@Url.Content("~/Content/Description.css")" rel="stylesheet" type="text/css" />
+</head>
+<body>
+        <table style=width:500px; class="b" border="1">
+            <caption style="color:cornflowerblue">Disease</caption>
+            <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Описание</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody" class="s">
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+    <input type="button" value="Вернуться" onclick="back()" id="Pr" />
+    <div hidden>
+        <div id="diseaseId">@ViewBag.DiseaseID</div>
+    </div>
+</body>
+</html>

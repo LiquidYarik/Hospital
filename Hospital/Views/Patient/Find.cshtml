@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Title = "Find";
+}
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Документ без названия</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="~/Scripts/Find.js" type="text/javascript"></script>
+    <link href="@Url.Content("~/Content/Find.css")" rel="stylesheet" type="text/css" />
+</head>
+<body onload="init()">
+    <div class="modalW">
+        <div class="modal-content">
+            <a class="close">&times;</a>
+            <h4 class="vv">Заболевание</h4>
+            <button class="Bol" onclick="show()">Показать</button>
+            <button class="Back" onclick="back()">Вернуться</button>
+        </div>
+    </div>
+    <table style="border: 1px solid;">
+        <caption style="color:cornflowerblue">Patients</caption>
+        <thead>
+            <tr style="color:purple">
+                <td>Фамилия</td>
+                <td>Имя</td>
+                <td>Возраст</td>
+                <td>Болезнь</td>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>         
+        </tbody>
+    </table>
+  <br />
+    @*<div hidden id="PatientID">@Model.PatientID</div>*@
+    @*<div hidden id="DiseaseID">@Model.DiseaseID</div>*@   
+
+    <div>
+        <label>Выберите доктора</label>
+        <select id="doctorsSelect">
+        </select>
+    </div>
+    <br />
+    <div>
+        <label>Выберите дату</label>
+        <input id="dd" onchange="hm()" type="date" />
+    </div>
+    <div id="timeee" style="margin-top:25px" hidden>
+        <label>Выберите Время</label>
+        <select id="tim" onchange="">
+        </select>
+    </div>
+    <br />
+    <div>
+        <input type="button" id="zapis" onclick="Send()" value="Записаться" />
+    </div>
+    <div hidden>
+        <div id="PatientID">@ViewBag.PatientID</div>
+        <div id="DiseaseID">@ViewBag.DiseaseID</div>
+        
+    </div>
+</body>
+</html>
+
+

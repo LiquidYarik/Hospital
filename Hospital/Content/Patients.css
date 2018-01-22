@@ -1,0 +1,231 @@
+﻿body {
+    /*#cool:hover {
+    background-color: darkmagenta;
+}*/
+}
+
+#Adi {
+    margin-left: 300px;
+}
+
+.b {
+    background: #f5ffff;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+    .b th {
+        border-top: 1px solid #777777;
+        border-bottom: 1px solid #777777;
+        /*box-shadow: inset 0 1px 0 #999999, inset 0 -1px 0 #999999;*/
+        background: linear-gradient(#9595b6, #5a567f);
+        color: white;
+        padding: 10px 15px;
+        position: relative;
+    }
+
+        .b th:after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 25%;
+            height: 25%;
+            width: 100%;
+            background: linear-gradient(rgba(255, 255, 255, 0), rgba(255,255,255,.08));
+        }
+
+    .b tr:nth-child(odd) {
+        // background: #ebf3f9;
+    }
+
+    .b th:first-child {
+        border-left: 1px solid #777777;
+        border-bottom: 1px solid #777777;
+        /*box-shadow: inset 1px 1px 0 #999999, inset 0 -1px 0 #999999;*/
+    }
+
+    .b th:last-child {
+        border-right: 1px solid #777777;
+        border-bottom: 1px solid #777777;
+        /*box-shadow: inset -1px 1px 0 #999999, inset 0 -1px 0 #999999;*/
+    }
+
+    .b td {
+        border: 1px solid #e3eef7;
+        padding: 10px 15px;
+        position: relative;
+        transition: all 0.5s ease;
+    }
+
+    .b tbody:hover td {
+        /*color: transparent;*/
+        /*text-shadow: 0 0 3px #a09f9d;*/
+    }
+
+    .b tbody:hover tr:hover td {
+        /*// color: #444444;*/
+        /*text-shadow: none;*/
+    }
+
+
+#Vr {
+    display: inline-block;
+    text-shadow: 1px 1px #fff;
+    text-decoration: none;
+    padding: .3em 1em;
+    border: 1px solid #aaa;
+    border-radius: 100px;
+    outline: none;
+    background: #d6dbbf no-repeat;
+    background-image: linear-gradient(to left, #aaa, #aaa), linear-gradient(to left, #feffe8, #feffe8), linear-gradient(#feffe8, #d6dbbf);
+    background-position: calc(100% - 2.7em) 0, calc(100% - 2.7em + 1px) 0, 0 0;
+    background-size: 1px 100%, 1px 100%, auto auto;
+    overflow: hidden;
+}
+
+.a {
+    margin-left: 150px;
+}
+
+#Vr {
+    content: "\bb";
+    position: relative;
+    bottom: 0;
+    display: inline-block;
+    margin-left: 1.4em;
+    vertical-align: middle;
+    font-family: "Times","Times New Roman","serif","sans-serif","EmojiSymbols";
+    font-weight: 700;
+    font-size: 140%;
+    // -webkit-transform: rotate(90deg);
+    // transform: rotate(90deg);
+}
+
+    #Vr:hover {
+        background-color: #fdfd9f;
+        background-image: linear-gradient(to left, #aaa, #aaa), linear-gradient(to left, #feffe8, #feffe8), linear-gradient(#fffce7, #fdfd9f);
+    }
+
+    #Vr:active:after {
+        bottom: -1.2em;
+        transition: .3s;
+    }
+
+
+#age {
+    margin-left: 53px;
+}
+
+
+#press {
+    background: #b7f2f4;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#b7f2f4), to(#81e8eb));
+    background: -moz-linear-gradient(#b7f2f4, #81e8eb);
+    background: linear-gradient(#b7f2f4, #81e8eb);
+    border: solid 1px #87d3d5;
+    border-bottom: solid 3px #4fa7aa;
+    box-shadow: inset 0 0 0 1px #d4f8f8;
+    color: #437b7d;
+    text-shadow: 0 1px 0 #bef3f5;
+}
+
+    #press:hover {
+        background: #8deaed;
+        background: -webkit-gradient(linear, 0 0, 0 bottom, from(#8deaed), to(#9fedf0));
+        background: -moz-linear-gradient(#8deaed, #9fedf0);
+        background: linear-gradient(#8deaed, #9fedf0);
+        border: solid 1px #79c5c7;
+        border-bottom: solid 3px #4fa7aa;
+        box-shadow: inset 0 0 0 1px #b9f2f5;
+    }
+
+    #press:active {
+        background: #84e4e7;
+        background: -webkit-gradient(linear, 0 0, 0 bottom, from(#84e4e7), to(#80dcdf));
+        background: -moz-linear-gradient(#84e4e7, #80dcdf);
+        background: linear-gradient(#84e4e7, #80dcdf);
+        border: solid 1px #58999b;
+        box-shadow: inset 0 10px 15px 0 #75c9cc;
+    }
+
+
+
+#name {
+    margin-left: 43px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#surname {
+    margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#age {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.b {
+    margin-left: 250px;
+    margin-top: 100px;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+/* отображаем выпадающий список при наведении */
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+/* первый уровень выпадающего списка */
+nav ul ul li {
+    min-width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+nav {
+    margin: 100px 0;
+}
+
+    /* убираем отступы и поля, а также list-style для "ul", 
+			 * и добавляем "position:relative" */
+    nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
+    }
+
+        /* применяем inline-block позиционирование к элементам навигации */
+        nav ul li {
+            margin: 0px -7px 0 0;
+            display: inline-block;
+            background-color: midnightblue;
+        }
+
+    /* стилизуем ссылки */
+    nav a {
+        display: block;
+        padding: 0 10px;
+        color: #FFF;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+    }
+
+/* изменяем цвет фона при наведении курсора */
+#tableBody:hover {
+    cursor: pointer;
+}
+#tableBody tr:hover {
+    background-color: red;
+}
