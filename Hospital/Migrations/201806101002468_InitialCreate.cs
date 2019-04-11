@@ -35,6 +35,7 @@ namespace Hospital.Migrations
                     {
                         DoctorID = c.Int(nullable: false, identity: true),
                         Name = c.String(),
+                        Surname = c.String(),
                         Age = c.Int(nullable: false),
                         Experience = c.Int(nullable: false),
                         SpecializationID = c.Int(),
@@ -64,6 +65,7 @@ namespace Hospital.Migrations
                 c => new
                     {
                         PatientID = c.Int(nullable: false, identity: true),
+                        PatientPassword = c.String(),
                         Name = c.String(),
                         Surname = c.String(),
                         Age = c.Int(nullable: false),

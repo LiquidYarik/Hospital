@@ -8,8 +8,11 @@ namespace Hospital.Models
 {
     public class Patients
     {
+  
+
         [Key]
         public int PatientID { get; set; }
+        public string PatientPassword { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public int Age { get; set; }

@@ -199,6 +199,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\DiseaseController.cs" />
     <Compile Include="Controllers\DoctorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -215,35 +216,17 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\Timeslots.cs" />
-    <Compile Include="Migrations\201711230340328_InitialCreate.cs" />
-    <Compile Include="Migrations\201711230340328_InitialCreate.Designer.cs">
-      <DependentUpon>201711230340328_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201711230753493_Doctors.cs" />
-    <Compile Include="Migrations\201711230753493_Doctors.Designer.cs">
-      <DependentUpon>201711230753493_Doctors.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201711230754078_Patients.cs" />
-    <Compile Include="Migrations\201711230754078_Patients.Designer.cs">
-      <DependentUpon>201711230754078_Patients.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201711230754253_Schedule.cs" />
-    <Compile Include="Migrations\201711230754253_Schedule.Designer.cs">
-      <DependentUpon>201711230754253_Schedule.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201711230754432_Disease.cs" />
-    <Compile Include="Migrations\201711230754432_Disease.Designer.cs">
-      <DependentUpon>201711230754432_Disease.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201711230755029_Specialization.cs" />
-    <Compile Include="Migrations\201711230755029_Specialization.Designer.cs">
-      <DependentUpon>201711230755029_Specialization.cs</DependentUpon>
+    <Compile Include="Migrations\201806101002468_InitialCreate.cs" />
+    <Compile Include="Migrations\201806101002468_InitialCreate.Designer.cs">
+      <DependentUpon>201806101002468_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Disease.cs" />
     <Compile Include="Models\Doctors.cs" />
     <Compile Include="Models\HospitalDB.cs" />
+    <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\Patients.cs" />
+    <Compile Include="Models\RegisterModel.cs" />
     <Compile Include="Models\Schedule.cs" />
     <Compile Include="Models\Specialization.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -322,6 +305,8 @@
     <Content Include="Views\Disease\Index.cshtml" />
     <Content Include="Views\Disease\Description.cshtml" />
     <Content Include="Views\Specialization\Index.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -340,23 +325,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201711230340328_InitialCreate.resx">
-      <DependentUpon>201711230340328_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201711230753493_Doctors.resx">
-      <DependentUpon>201711230753493_Doctors.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201711230754078_Patients.resx">
-      <DependentUpon>201711230754078_Patients.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201711230754253_Schedule.resx">
-      <DependentUpon>201711230754253_Schedule.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201711230754432_Disease.resx">
-      <DependentUpon>201711230754432_Disease.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201711230755029_Specialization.resx">
-      <DependentUpon>201711230755029_Specialization.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201806101002468_InitialCreate.resx">
+      <DependentUpon>201806101002468_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
